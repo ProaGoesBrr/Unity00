@@ -8,9 +8,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 100; i++)
         {
-            Instantiate(moneda,new Vector3(Random.Range(-48,48),1,Random.Range(-48,48)),Quaternion.identity);
+            Instantiate(moneda,new Vector3(Random.Range(-48,48), 0.5f,Random.Range(-48,48)),Quaternion.identity);
         }
     }
 

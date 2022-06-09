@@ -13,6 +13,6 @@ public class moneda : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(100f * Time.deltaTime, 0f, Random.Range(0f, 100f) * Time.deltaTime, Space.World);
+        transform.Rotate(200f * Time.deltaTime, Random.Range(-200f, 200f) * Time.deltaTime, Random.Range(-200f, 200f) * Time.deltaTime, Space.World);
     }
 }
