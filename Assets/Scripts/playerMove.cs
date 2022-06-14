@@ -20,6 +20,13 @@ public class playerMove : MonoBehaviour
 
     }
 
+        void OnCollisionEnter(Collision other){
+            if(other.gameObject.tag == "enemy"){
+                gameObject.SetActive(false);
+                // Time.timeScale = 0f;
+            }
+        }
+
         void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Moneda")

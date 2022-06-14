@@ -3,7 +3,9 @@ guid: 671a1be362d6a18c8982b9ffa3978634
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - moneda: {instanceID: 0}
+  - bola_pinchuda: {fileID: 4102276445487510472, guid: 726933a124b6a26fd9476f07b97f7749, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
