@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 344564894}
-  speed: 20
+  speed: 40
 --- !u!135 &344564896
 SphereCollider:
   m_ObjectHideFlags: 0

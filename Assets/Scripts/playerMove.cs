@@ -15,6 +15,33 @@ public class playerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Movement();
+
+
+    }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Moneda")
+            {
+                Debug.Log("tacando");
+                Destroy(other.gameObject);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void Movement(){
         if (Input.GetKey("w")){
             rb.AddForce(0, 0, 1 * speed * Time.deltaTime, ForceMode.Force);
             rb.drag = 0;
