@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject moneda, bola_pinchuda;
+    public TMP_Text texto;
+    public PlayerController player;
     void Start()
     {
         for (int i = 0; i < 100; i++)
@@ -20,6 +23,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        texto.text = player.points.ToString();
     }
 }
